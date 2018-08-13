@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Ejercicio 3 -->
+
+  <h1>Botones y alertas</h1>
+  <p>Crea una interfaz web que tenga 4 botones llamados: Primero, Segundo, Tercero y Cuarto.
+      Crea una variable con el siguiente arreglo: [‘“Brasil”, “Chile“, “México“, “Perú”’].
+      Cuando se hace clic en cada botón, debe alertar el país correspondiente a la posición correspondiente en el arreglo. Por ejemplo, hacer clic en "Segundo" debería alertar a "Chile".
+      Hacker edition:
+      Adjunte un solo `click handler` al padre de los botones.
+      Solo muestra la alerta la primera vez que se haga clic en un botón. Es decir, hacer clic una segunda vez al botón no mostrará la alerta de nuevo.
+      Refactoriza el código para que no haya variables globales.
+      
+  </p>
+
+  <button id="btn" onclick="disBrasil()">Primero</button>
+  <button id="btn1" onclick="disChile()">Segundo</button>
+  <button id="btn2" onclick="disMexico()">Tercero</button>
+  <button id="btn3" onclick="disPeru()">Cuarto</button>
+
+  <br>
+  <br>
+
+  <!-- <button id="btn" value="Brasil">Primero</button>
+  <button id="btn" value="Chile">Segundo</button>
+  <button id="btn" value="Mexico">Tercero</button>
+  <button id="btn" value="Peru">Cuarto</button> -->
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+.first-column {
+  min-width: 50%;
+  max-width: 100%;
+  float: left;
+  border: 1px solid blueviolet;
+  height: 40vh;
+  position: relative;
+}
+
+.second-column {
+  min-width: 50%;
+  max-width: 100%;
+  float: right;
+  height: 40vh;
+  border: 1px solid brown;
+}
+
+/* /Media Query/ */
+
+@media screen and (min-width: 300px) and (max-width: 576px) {
+  .first-column {
+      width: 100%;
+      position: absolute;
+  }
+  .second-column {
+      width: 100%;
+  }
+}

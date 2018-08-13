@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <!-- Ejercicio 4 -->
+  <p>Crea una interfaz web con una línea de texto que, al hacerle clic, permita al usuario editarla ahí mismo (de texto pasa
+    a ser input con campo de edición). Cuando el usuario presiona enter o hace clic fuera del campo de edición, el input
+    debe volver a convertirse en una línea de texto (y muestra el texto recién ingresado). Por ejemplo: si el texto original
+    decía “Nombre”, al darle clic, el usuario puede editarlo e ingresar “Rodulfo”. Luego, al hacer clic fuera del campo,
+    queda el texto final (“Rodulfo”).
+  </p>
+  <div id="parrafo" contentEditable=true>Hola</div>
+
+  <p>Configura un `callback onChange` que se invocará cada vez que cambie el valor del campo.</p>
+  <div id="parrafo1" handleTextChange() contentEditable=true>Como estas</div>
+
+  <p>Configura un `callback onKeyUp` que se invocará cada vez que se escriba una nueva tecla. </p>
+  <div id="parrafo2" onkeyup="myFunction()" contentEditable=true>Buen dia</div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
